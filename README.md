@@ -32,17 +32,9 @@
 |Column|Type|Option|
 |------|----|------|
 |message|string|null: false|
+|image|string|
 |user_id|integer|null: false, foreign_key: true|
 |gruop_id|integer|null: false, foreign_key: true|
 ### Association
-- has_many :images
 - belongs_to :user
 - belongs_to :group
-
-## imagesテーブル
-|Column|Type|Option|
-|------|----|------|
-|image|string|null: false|
-|message_id|integer|null: false, foreign_key: true|
-### Association
-- belongs_to :message
