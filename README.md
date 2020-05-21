@@ -6,8 +6,8 @@
 |email|string|null: false, unique: true|
 |password|string|null: false|
 ### Association
-- has-many :users_groups
-- has-many :messages
+- has_many :users_groups
+- has_many :messages
 
 ## groupsテーブル
 |Column|Tyoe|Option|
