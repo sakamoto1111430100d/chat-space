@@ -30,8 +30,8 @@
 |Column|Tyoe|Option|
 |------|----|------|
 |message|string|null: false|
-|user_id|integer|null: false, foreign-key: true|
-|gruop_id|integer|null: false, foreign-key: true|
+|user_id|integer|null: false, foreign_key: true|
+|gruop_id|integer|null: false, foreign_key: true|
 ### Association
 - has_many :images
 - belongs_to :user
