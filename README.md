@@ -14,8 +14,8 @@
 |------|----|------|
 |group_name|string|null: false|
 ### Association
-- has-many :messages
-- has-many :users-groups
+- has_many :messages
+- has_many :users_groups
 
 ## users_groupsテーブル
 |Column|Tyoe|Option|
