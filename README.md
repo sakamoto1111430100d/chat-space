@@ -9,3 +9,10 @@
 - has-many :users_groups
 - has-many :messages
 
+## groupsテーブル
+|Column|Tyoe|Option|
+|------|----|------|
+|group_name|string|null: false|
+### Association
+- has-many :messages
+- has-many :users-groups
