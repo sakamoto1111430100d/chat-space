@@ -16,3 +16,12 @@
 ### Association
 - has-many :messages
 - has-many :users-groups
+
+## users_groupsテーブル
+|Column|Tyoe|Option|
+|------|----|------|
+|user_id|integer|null: false, foreign-key: true|
+|gruop_id|integer|null: false, foreign-key: true|
+### Association
+- belong-to :user
+- belong-to :group
