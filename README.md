@@ -37,7 +37,7 @@
 - belongs_to :user
 - belongs_to :group
 
-## imageテーブル
+## imagesテーブル
 |Column|Tyoe|Option|
 |------|----|------|
 |image|string|null: false|
