@@ -20,11 +20,11 @@
 ## users_groupsテーブル
 |Column|Tyoe|Option|
 |------|----|------|
-|user_id|integer|null: false, foreign-key: true|
-|gruop_id|integer|null: false, foreign-key: true|
+|user_id|integer|null: false, foreign_key: true|
+|gruop_id|integer|null: false, foreign_key: true|
 ### Association
-- belong-to :user
-- belong-to :group
+- belongs_to :user
+- belongs_to :group
 
 ## messagesテーブル
 |Column|Tyoe|Option|
