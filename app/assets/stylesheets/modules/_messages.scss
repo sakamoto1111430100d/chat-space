@@ -11,6 +11,13 @@
     &__user-name {
       height: 100px;
       background-color: #253141;
+      display: flex;
+      align-items: center;
+      & {
+        height: 20px;
+        margin: 0px, 20px;
+        background-color: #d8d8d8;
+      }
     }
     &__group-list {
       height: calc(100vh - 100px);
