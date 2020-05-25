@@ -102,10 +102,53 @@
     &__message-list {
       height: calc(100vh - 100px - 90px);
       background-color: #fafafa;
+      padding: 35px 0 0 40px;
+      .a_message {
+        padding-bottom: 46px;
+        &__header {
+          padding-bottom: 12px;
+          &--name {
+            color: #333333;
+            font-size: 16px;
+          }
+          &--date {
+            color: #999999;
+            font-size: 12px;
+          }
+        }
+        &__message {
+          color: #434A54;
+          font-size: 14px;
+        }
+      }
     }
-    &__message-form {
+    .message-form {
       height: 90px;
       background-color: #d2d2d2;
+      padding: 0 40px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      &__text-area {
+        padding: 0 10px;
+        height: 50px;
+        width: 100vw;
+        line-height: 50px;
+        color: #999999;
+        background-color: #ffffff;      
+      }
+      &__send-btn {
+        margin-left: 15px;
+        height: 50px;
+        width: 100px;
+        text-align: center;
+        line-height: 50px;
+        color: #ffffff;
+        background-color: #38aef0;
+        flex-shrink: 0;
+      }
+      
     }
   }
 }
