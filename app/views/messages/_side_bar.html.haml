@@ -1,54 +1,16 @@
-.wrapper
-  .side-bar
-    .side-bar__user-name
-      .top-items
-        .top-items__name
-          masa
-        .top-items__icons
-          = link_to "#", class: "top-items__icons--edit" do
-            = icon('far', 'edit', class: "top-items__icons--icon")
-          = link_to "#" do
-            = icon('fas', 'cog', class: "top-items__icons--icon")
-    .side-bar__group-list
-      .group-select
-        .group-select__group-name
-          techchamp
-        .group-select__message
-          まだメッセージがありません
-  .chat-main
-    .chat-main__group-info
-      .group-info
-        .group-info__left
-          .group-info__left--top
-            test
-          .group-info__left--bottom
-            Member:masa
-        .group-info__right
-          edit
-    .chat-main__message-list
-      .message-list
-        .a-message
-          .a-message__header
-            .a-message__header--name
-              masa
-            .a-message__header--date
-              2019/11/10(Wed)
-          .a-message__message
-            おはよう
-
-        .a-message
-          .a-message__header
-            .a-message__header--name
-              masa
-            .a-message__header--date
-              2019/11/10(Wed)
-          .a-message__message
-            今日は夜から雨
-    .chat-main__message-form
-      .message-form
-        .message-form__text-area
-          %input{type: "text_filed", placeholder: "type a message", class: "message-form__text-area--text"}
-          %label{class: "message-form__text-area--image"}
-            = icon('fas', 'image', class: "image-icon")
-            %input{type: "file", class: "image-file"}
-        %input{type: "submit", value: "Send", class: "message-form__send-btn"}
+.side-bar
+  .side-bar__user-name
+    .top-items
+      .top-items__name
+        masa
+      .top-items__icons
+        = link_to "#", class: "top-items__icons--edit" do
+          = icon('far', 'edit', class: "top-items__icons--icon")
+        = link_to "#" do
+          = icon('fas', 'cog', class: "top-items__icons--icon")
+  .side-bar__group-list
+    .group-select
+      .group-select__group-name
+        techchamp
+      .group-select__message
+        まだメッセージがありません
