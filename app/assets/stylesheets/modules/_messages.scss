@@ -103,7 +103,7 @@
       height: calc(100vh - 100px - 90px);
       background-color: #fafafa;
       padding: 35px 0 0 40px;
-      .a_message {
+      .a-message {
         padding-bottom: 46px;
         &__header {
           padding-bottom: 12px;
@@ -131,12 +131,29 @@
       align-items: center;
 
       &__text-area {
-        padding: 0 10px;
         height: 50px;
         width: 100vw;
         line-height: 50px;
         color: #999999;
-        background-color: #ffffff;      
+        background-color: #ffffff;   
+        display: flex;
+        position: relative;
+        &--text {
+          width: 100%;
+        }
+        &--image {
+          position: absolute;
+          right: 0;
+          padding: 0 10px;
+          .image-icon {
+            color: black;
+            font-size: 30px;
+            line-height: 50px;
+          }
+          .image-file {
+            display: none;
+          }
+        }   
       }
       &__send-btn {
         margin-left: 15px;
