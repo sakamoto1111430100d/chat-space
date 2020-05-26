@@ -6,7 +6,7 @@
           test
         .group-info__left--bottom
           Member:masa
-      .group-info__right
+      = link_to edit_group_path(current_user), class: "group-info__right" do
         edit
   .chat-main__message-list
     .message-list
