@@ -3,10 +3,11 @@
     .group-info
       .group-info__left
         .group-info__left--top
-          test
+          = @group.name
         .group-info__left--bottom
-          Member:masa
-      = link_to edit_group_path(current_user), class: "group-info__right" do
+          - @group.users.each do |user|
+            = user.name
+      = link_to edit_group_path(@group), class: "group-info__right" do
         edit
   .chat-main__message-list
     = render @messages
