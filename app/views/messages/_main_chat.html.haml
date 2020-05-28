@@ -9,28 +9,14 @@
       = link_to edit_group_path(current_user), class: "group-info__right" do
         edit
   .chat-main__message-list
-    .message-list
-      .a-message
-        .a-message__header
-          .a-message__header--name
-            masa
-          .a-message__header--date
-            2019/11/10(Wed)
-        .a-message__message
-          おはよう
-      .a-message
-        .a-message__header
-          .a-message__header--name
-            masa
-          .a-message__header--date
-            2019/11/10(Wed)
-        .a-message__message
-          今日は夜から雨
+    = render @messages
   .chat-main__message-form
     .message-form
-      .message-form__text-area
-        %input{type: "text_filed", placeholder: "type a message", class: "message-form__text-area--text"}
-        %label{class: "message-form__text-area--image"}
-          = icon('fas', 'image', class: "image-icon")
-          %input{type: "file", class: "image-file"}
-      %input{type: "submit", value: "Send", class: "message-form__send-btn"}
+      = form_for [@group, @message] do |f|
+        .new_message
+          = f.text_field :content, class: 'text-area', placeholder: 'type amessage'
+          .form__mask
+            = f.label :image, class: 'form__mask--image' do
+              = icon('fas', 'image', class: 'image-icon')
+              = f.file_field :image, class: 'image-file'
+          = f.submit 'Send', class: 'message-form__send-btn'
