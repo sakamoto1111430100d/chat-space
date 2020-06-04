@@ -43,7 +43,7 @@ $(function() {
   $('.new_message').on('submit', function(e){
     e.preventDefault();
     var formData = new FormData(this);
-    var url = $(this).attr('action')
+    var url = $(this).attr('action');
     $.ajax({
       url: url,
       type: "POST",
@@ -77,7 +77,7 @@ $(function() {
         $.each(messages, function(i, message) {
           insertHTML += buildHTML(message)
         });
-        $('.message-list').append(insetHTML);
+        $('.message-list').append(insertHTML);
         $('.message-list').animate({scrollTop: $('.message-list')[0].scrollHeight});
       }   
     })
@@ -88,4 +88,4 @@ $(function() {
   if (document.location.href.match(/\/groups\/\d+\/messages/)) {
     setInterval(reloadMessages, 7000);
   }
-})
+});
