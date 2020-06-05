@@ -9,7 +9,7 @@
           - @group.users.each do |user|
             = user.name
       = link_to edit_group_path(@group), class: "group-info__right" do
-        edit
+        Edit
   .chat-main__message-list
     = render @messages
   .chat-main__message-form
