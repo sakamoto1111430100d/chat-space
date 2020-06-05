@@ -56,11 +56,12 @@ $(function() {
       var html = buildHTML(data);
       $('.chat-main__message-list').append(html);
       $('.chat-main__message-list').animate({ scrollTop: $('.chat-main__message-list')[0].scrollHeight});
-      $('form')[0].reset()
+      $('form')[0].reset();
       $('.message-form__send-btn').prop('disabled', false)
     })
     .fail(function() {
       alert("メッセージ通信に失敗しました");
+      $('.message-form__send-btn').prop('disabled', false)
     })
   })
   var reloadMessages = function() {
